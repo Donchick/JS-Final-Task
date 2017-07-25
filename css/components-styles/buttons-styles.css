@@ -1,0 +1,32 @@
+button{
+	outline: 0;
+	cursor: pointer;
+}
+
+.btn{
+	width: 120px;
+	height: 35px;
+	color: #FFFFFF;
+	border-radius: 5px;
+	font-size: 14px;
+	border:none;
+	padding: 0;
+	outline: 0;
+	font-family: PT Sans, serif, sans-serif;
+}
+
+.primary-btn{
+	background-image: linear-gradient(to top, #278473 0%, #3fc6cc 100%);
+}
+
+.primary-btn:active{
+	background-image: linear-gradient(to top, #3fc6cc 0%, #278473 100%);
+}
+
+.secondary-btn{
+	background-image: linear-gradient(to top, #767676 0%, #b1b1b1 100%);
+}
+
+.secondary-btn:active{
+	background-image: linear-gradient(to top, #b1b1b1 0%, #767676 100%);
+}

@@ -1,0 +1,33 @@
+.product-img{
+	position: relative;
+}
+
+.product-img img{
+	width: 100%;
+}
+
+.product-img .product-rating{
+	position: absolute;
+	bottom: 0;
+	padding-left: 15px;
+	width: calc(100% - 15px);
+	background: rgba(0, 0, 0, 0.7);
+	height: 30px;
+	text-align: left;
+}
+
+.rating-start{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+	margin: 0 2px;
+    margin: 7px 2px;
+}
+
+.gold-star{
+    background: url(../../images/gold-star.png);
+}
+
+.star{
+	background: url('../../images/star.png');
+}
