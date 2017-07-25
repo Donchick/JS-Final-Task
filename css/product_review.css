@@ -1,0 +1,15 @@
+.product-review{
+    width: 100%;
+}
+
+.review-preview{
+    min-height: 230px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.review-editor{
+    height: 310px;
+    width: 100%;
+    background: #ffffff;
+}

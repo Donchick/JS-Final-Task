@@ -47,6 +47,7 @@ main{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+	margin-bottom: 85px;
 }
 
 .product-block .product-img,
