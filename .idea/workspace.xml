@@ -26,8 +26,8 @@
       <file leaf-file-name="product_customer.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product_customer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2527">
-              <caret line="230" column="68" selection-start-line="230" selection-start-column="68" selection-end-line="230" selection-end-column="68" />
+            <state relative-caret-position="45">
+              <caret line="159" column="69" selection-start-line="159" selection-start-column="69" selection-end-line="159" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -36,8 +36,18 @@
       <file leaf-file-name="product_review.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/product_review.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="197" column="17" selection-start-line="197" selection-start-column="17" selection-end-line="197" selection-end-column="17" />
+            <state relative-caret-position="60">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product_customer.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/product_customer.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,8 +86,8 @@
         <option value="$PROJECT_DIR$/product_customer.js" />
         <option value="$PROJECT_DIR$/product-review.html" />
         <option value="$PROJECT_DIR$/product-review.css" />
-        <option value="$PROJECT_DIR$/css/product_customer.css" />
         <option value="$PROJECT_DIR$/css/components-styles/product-image.css" />
+        <option value="$PROJECT_DIR$/css/product_customer.css" />
         <option value="$PROJECT_DIR$/css/product_review.css" />
         <option value="$PROJECT_DIR$/product_customer.html" />
       </list>
@@ -259,12 +269,12 @@
       <updated>1500905538437</updated>
       <workItem from="1500905541051" duration="6171000" />
       <workItem from="1500987238059" duration="446000" />
-      <workItem from="1500987733486" duration="29213000" />
+      <workItem from="1500987733486" duration="31685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35830000" />
+    <option name="totallyTimeSpent" value="38302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -402,14 +412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/product_customer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/components-styles/product-image.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="516">
@@ -418,18 +420,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/product_customer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/product_review.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="197" column="17" selection-start-line="197" selection-start-column="17" selection-end-line="197" selection-end-column="17" />
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/product_customer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2527">
-          <caret line="230" column="68" selection-start-line="230" selection-start-column="68" selection-end-line="230" selection-end-column="68" />
+        <state relative-caret-position="45">
+          <caret line="159" column="69" selection-start-line="159" selection-start-column="69" selection-end-line="159" selection-end-column="69" />
           <folding />
         </state>
       </provider>
