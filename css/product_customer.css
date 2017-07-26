@@ -41,7 +41,6 @@ main{
 }
 
 .product-block{
-	width: calc(100% - 60px);
 	background: #fdfdfd url('../images/product-tile-background.png');
 	padding: 20px 20px 25px;
 	display: flex;

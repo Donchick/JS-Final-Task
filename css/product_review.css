@@ -1,15 +1,141 @@
 .product-review{
     width: 100%;
+    margin-bottom: 60px;
 }
 
 .review-preview{
-    min-height: 230px;
-    width: 100%;
     background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    color: #ffffff;
 }
 
 .review-editor{
     height: 310px;
     width: 100%;
+    background: #fdfdfd url(../images/product-tile-background.png);
+    outline: 3px solid #3fc5cb;
+    outline-offset: -3px;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.review-info{
+    margin-bottom: 20px;
+}
+
+.review-avatar{
+    width: 80px;
+    height: 80px;
+    background: url('../images/empty-avatar.png') no-repeat #000000;
+    background-position: 50% 50%;
+    display: inline-block;
+}
+
+.review-preview-text{
+    display: inline-block;
+    width: calc(100% - 100px);
+}
+
+.review-text-info{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.review-editor > .label{
+    position: absolute;
+    width: 178px;
+    height: 38px;
     background: #ffffff;
+    font-family: PT Sans, SansSerif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 38px;
+    border-radius: 20px;
+    border:3px solid #3fc5cb;
+    top: -19px;
+    left: calc(50% - 95px);
+}
+
+.user-info{
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.user-info label,
+.review-text-editor label{
+    display: block;
+    margin-bottom: 7px;
+}
+
+.user-name{
+    width: 200px;
+    height: 42px;
+    border: 3px solid rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    outline: 0;
+    font-size: 14px;
+    padding: 0 11px;
+    margin-bottom: 24px;
+}
+
+.file-styled-label{
+    position: absolute;
+    width: 193px;
+    height: 91px;
+    line-height: 91px;
+    border: 3px solid rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    background: #FFFFFF;
+    bottom: 75px;
+    vertical-align: middle;
+    padding: 0 10px 0 20px;
+    background: url(../images/empty-avatar-label.png) no-repeat #ffffff;
+    background-position: 90% 50%;
+    font-size: 14px;
+    font-family: PT Sans, SansSerif;
+    font-style: italic;
+    z-index: 1;
+}
+
+input.avatar{
+    width: 229px;
+    height: 97px;
+    outline: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 75px;
+}
+
+.review-text-editor{
+    padding: 20px 20px 20px 0;
+    width: calc(100% - 288px);
+}
+
+.review-text{
+    width: calc(100% - 46px);
+    height: 160px;
+    border: 3px solid rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: normal;
+    padding: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    font-family: PT Sans, SansSerif;
+    outline: 0;
+    resize: none;
+}
+
+.product-rating-editor{
+    float: right;
+    width: 50px;
+    height: 16px;
 }
