@@ -39,6 +39,8 @@ var openedReviewEditorLabel = document.querySelector('.add-review-lable .opened-
 var productReview = document.querySelector('.product-review');
 
 var cancelBtn = document.getElementsByClassName('cancel-btn')[0];
+var textEditor;
+var imgPreviewLoader;
 
 openReviewEditorLabel.addEventListener('click', function () {
     productReview.style['display'] = 'block';
@@ -47,7 +49,21 @@ openReviewEditorLabel.addEventListener('click', function () {
 
     var date = new Date();
     reviewDate.textContent = `${date.getDate()} ${months[date.getMonth()]} , ${date.getFullYear()}`;
+
+    if (!textEditor) {
+        textEditor = new SimpleTextEditor (reviewTextInput, reviewTextOutput, boldBtn, emphasizeBtn, quoteBtn);
+    }
+
+    if (!imgPreviewLoader) {
+        imgPreviewLoader = new ImagePreviewLoader(avatarInput,
+            [avatarUploadOuput, avatarOutput], imgLoaded);
+    }
 });
+
+function imgLoaded () {
+    avatarSelectedLabel.removeAttribute('hidden');
+    avatarEmptyLabel.setAttribute('hidden', 'hidden');
+}
 
 cancelBtn.addEventListener('click', function () {
     productReview.style['display'] = 'none';
@@ -57,78 +73,6 @@ cancelBtn.addEventListener('click', function () {
 
 userNameInput.addEventListener('input', function () {
     userNameOutput.textContent = userNameInput.value || 'Your name';
-});
-
-reviewTextInput.addEventListener('input', function () {
-    var regexp = /\[(\/?)([bqi])\]/g;
-    var result = reviewTextInput.value.replace(regexp, '<$1$2>')
-        .replace(/\n/g, '<br>');
-    reviewTextOutput.innerHTML = result || '';
-});
-
-boldBtn.addEventListener('click', function () {
-    var selectionPosition = getSelectionPosition(reviewTextInput);
-
-    reviewTextInput.value = addSubTag(reviewTextInput.value,
-        selectionPosition.start, selectionPosition.end, 'b');
-    triggerReviewTextChanged();
-});
-
-emphasizeBtn.addEventListener('click', function () {
-    var selectionPosition = getSelectionPosition(reviewTextInput);
-
-    reviewTextInput.value = addSubTag(reviewTextInput.value,
-        selectionPosition.start, selectionPosition.end, 'i');
-    triggerReviewTextChanged();
-});
-
-quoteBtn.addEventListener('click', function () {
-    var selectionPosition = getSelectionPosition(reviewTextInput);
-
-    reviewTextInput.value = addSubTag(reviewTextInput.value,
-        selectionPosition.start, selectionPosition.end, 'q');
-    triggerReviewTextChanged();
-});
-
-function getSelectionPosition(textElement) {
-    return {
-        start: textElement.selectionStart,
-        end: textElement.selectionEnd
-    };
-}
-
-function triggerReviewTextChanged () {
-    var event = document.createEvent('Event');
-    event.initEvent('input', true, true);
-    reviewTextInput.dispatchEvent(event);
-}
-
-function addSubTag(text, start, end, tag) {
-    var result;
-    if (start < end) {
-        result = text.slice(0, start) + `[${tag}]` + text.slice(start, end) +
-            `[/${tag}]` + text.slice(end);
-    } else {
-        result = text + `[${tag}][/${tag}]`;
-    }
-
-    return result;
-}
-
-avatarInput.addEventListener('change', function (e) {
-    var file = this.files[0];
-    var fr = new FileReader();
-    fr.onload = (function (file) {
-        return function (e) {
-            var data = e.target.result;
-            avatarOutput.src = data;
-            avatarUploadOuput.src = data;
-            avatarSelectedLabel.removeAttribute('hidden');
-            avatarEmptyLabel.setAttribute('hidden', 'hidden');
-        }
-    })(file);
-
-    fr.readAsDataURL(file);
 });
 
 productRatingEditorInputs.forEach(input => {

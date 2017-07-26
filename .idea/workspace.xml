@@ -23,21 +23,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="product_customer.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product_customer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product_customer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="91" column="81" selection-start-line="91" selection-start-column="81" selection-end-line="91" selection-end-column="81" />
+            <state relative-caret-position="472">
+              <caret line="119" column="40" selection-start-line="119" selection-start-column="40" selection-end-line="119" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-review.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="add-review.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/add-review.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="71" column="60" selection-start-line="71" selection-start-column="60" selection-end-line="71" selection-end-column="60" />
+            <state relative-caret-position="345">
+              <caret line="60" column="3" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image-preview-loader.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image-preview-loader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="63" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple-text-editor.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simple-text-editor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="42" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -99,7 +119,9 @@
         <option value="$PROJECT_DIR$/css/components-styles/product-image.css" />
         <option value="$PROJECT_DIR$/css/product_customer.css" />
         <option value="$PROJECT_DIR$/css/product_review.css" />
+        <option value="$PROJECT_DIR$/simple-text-editor.js" />
         <option value="$PROJECT_DIR$/product_customer.html" />
+        <option value="$PROJECT_DIR$/image-preview-loader.js" />
         <option value="$PROJECT_DIR$/add-review.js" />
       </list>
     </option>
@@ -248,12 +270,12 @@
       <updated>1500905538437</updated>
       <workItem from="1500905541051" duration="6171000" />
       <workItem from="1500987238059" duration="446000" />
-      <workItem from="1500987733486" duration="32982000" />
+      <workItem from="1500987733486" duration="34977000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39599000" />
+    <option name="totallyTimeSpent" value="41594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
@@ -415,18 +437,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add-review.js">
+    <entry file="file://$PROJECT_DIR$/simple-text-editor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="71" column="60" selection-start-line="71" selection-start-column="60" selection-end-line="71" selection-end-column="60" />
+        <state relative-caret-position="375">
+          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="42" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/product_customer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="91" column="81" selection-start-line="91" selection-start-column="81" selection-end-line="91" selection-end-column="81" />
+        <state relative-caret-position="472">
+          <caret line="119" column="40" selection-start-line="119" selection-start-column="40" selection-end-line="119" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image-preview-loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="63" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add-review.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="60" column="3" selection-start-line="60" selection-start-column="3" selection-end-line="60" selection-end-column="3" />
           <folding />
         </state>
       </provider>
