@@ -48,7 +48,7 @@
 				</div>
 				<div class="product-review">
 					<div class="review-preview">
-						<div class="product-rating-viewer">
+						<div class="product-rating-viewer" hidden>
 							<i class="star rating-start"></i>
 							<i class="star rating-start"></i>
 							<i class="star rating-start"></i>
@@ -77,11 +77,11 @@
 						<div class="review-text-editor">
 							<div class="product-rating-editor">
 								<span class="label">Rate product:</span>
-								<i class="grey-star rating-start"></i>
-								<i class="grey-star rating-start"></i>
-								<i class="grey-star rating-start"></i>
-								<i class="grey-star rating-start"></i>
-								<i class="grey-star rating-start"></i>
+								<i class="grey-star rating-start" data-rating="1"></i>
+								<i class="grey-star rating-start" data-rating="2"></i>
+								<i class="grey-star rating-start" data-rating="3"></i>
+								<i class="grey-star rating-start" data-rating="4"></i>
+								<i class="grey-star rating-start" data-rating="5"></i>
 							</div>
 							<label for="review">Write your review:</label>
 							<textarea id="review" class="review-text"></textarea>
@@ -210,6 +210,28 @@
 		})(file);
 
 		fr.readAsDataURL(file);
+	})
+
+	productRatingEditorInputs.forEach(input => {
+		input.addEventListener('click', function (event) {
+			var rating = event.currentTarget.dataset["rating"];
+
+			for (var i = 0; i < productRatingEditorInputs.length; i++) {
+				if (i < rating) {
+					productRatingEditorInputs[i].classList.remove('grey-star');
+					productRatingEditorInputs[i].classList.add('gold-star');
+
+					productRatingEditorOutputs.removeAttribute('hidden');
+					productRatingEditorOutputs.children[i].classList.remove('star');
+					productRatingEditorOutputs.children[i].classList.add('gold-star');
+				} else {
+					productRatingEditorInputs[i].classList.remove('gold-star');
+					productRatingEditorInputs[i].classList.add('grey-star');
+					productRatingEditorOutputs.children[i].classList.add('star');
+					productRatingEditorOutputs.children[i].classList.remove('gold-star');
+				}
+			}
+		});
 	})
 </script>
 </html>
