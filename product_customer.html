@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="./css/product_customer.css">
-		<link rel="stylesheet" href="./css/product_review.css">
 	</head>
 	<body>
 		<div class="body">
@@ -30,7 +29,7 @@
 						<div class="product-rating">
 							<i class="gold-star rating-start"></i>
 							<i class="gold-star rating-start"></i>
-							<i class="star rating-start"></i>
+							<i class="gold-star rating-start"></i>
 							<i class="star rating-start"></i>
 							<i class="star rating-start"></i>
 						</div>
@@ -49,10 +48,17 @@
 				</div>
 				<div class="product-review">
 					<div class="review-preview">
+						<div class="product-rating-viewer">
+							<i class="star rating-start"></i>
+							<i class="star rating-start"></i>
+							<i class="star rating-start"></i>
+							<i class="star rating-start"></i>
+							<i class="star rating-start"></i>
+						</div>
 						<p class="review-info">By<span class="user-name">Your Name</span><span class="review-date">March 4, 2017</span></p>
 						<div class="review-text-info">
 							<img class="review-avatar"/>
-							<div class="review-preview-text">ervb e rvjherv ererv ervyev erveruyv eurv uyer verv er</div>
+							<div class="review-preview-text"></div>
 						</div>
 					</div>
 					<div class="review-editor">
@@ -69,9 +75,27 @@
 							</div>
 						</div>
 						<div class="review-text-editor">
-							<div class="product-rating-editor"></div>
+							<div class="product-rating-editor">
+								<span class="label">Rate product:</span>
+								<i class="grey-star rating-start"></i>
+								<i class="grey-star rating-start"></i>
+								<i class="grey-star rating-start"></i>
+								<i class="grey-star rating-start"></i>
+								<i class="grey-star rating-start"></i>
+							</div>
 							<label for="review">Write your review:</label>
 							<textarea id="review" class="review-text"></textarea>
+							<div class="buttons-container">
+								<div class="left-side">
+									<button class="btn secondary-btn bold-btn">Bold</button>
+									<button class="btn secondary-btn emphasize-btn">Emphasize</button>
+									<button class="btn secondary-btn quote-btn">Quote</button>
+								</div>
+								<div class="right-side">
+									<button class="btn secondary-btn cancel-btn">Cancel</button>
+									<button class="btn primary-btn add-btn">Add Review</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -87,4 +111,105 @@
 	<script src="zoomer.js"></script>
 	<script src="utilites.js"></script>
 	<script src="product_customer.js"></script>
+<script>
+	var userNameInput = document.querySelector('.review-editor .user-name');
+	var userNameOutput = document.querySelector('.review-preview .user-name');
+
+	var avatarInput = document.querySelector('.review-editor .avatar');
+	var avatarUploadOuput = document.querySelector('.review-editor .avatar-img');
+	var avatarOutput = document.querySelector('.review-preview .review-avatar');
+	var avatarEmptyLabel = document.querySelector('.review-editor .empty-avatar.label');
+	var avatarSelectedLabel = document.querySelector('.review-editor .selected-avatar.label');
+
+	var productRatingEditorInputs = document.querySelectorAll('.review-editor .product-rating-editor i');
+	var productRatingEditorOutputs = document.querySelector('.review-preview .product-rating-viewer');
+
+	var reviewTextInput = document.querySelector('.review-editor .review-text');
+	var reviewTextOutput = document.querySelector('.review-preview .review-preview-text');
+
+	var boldBtn = document.getElementsByClassName('bold-btn')[0];
+	var emphasizeBtn = document.getElementsByClassName('emphasize-btn')[0];
+	var quoteBtn = document.getElementsByClassName('quote-btn')[0];
+	var cancelBtn = document.getElementsByClassName('cancel-btn')[0];
+	var addBtn = document.getElementsByClassName('add-btn')[0];
+
+
+	userNameInput.addEventListener('input', function () {
+		userNameOutput.textContent = userNameInput.value || 'Your name';
+	});
+
+	reviewTextInput.addEventListener('input', function () {
+		var regexp = /\[(\/?)([bqi])\]/g;
+		var result = reviewTextInput.value.replace(regexp, '<$1$2>')
+			.replace(/\n/g, '<br>');
+		reviewTextOutput.innerHTML = result || '';
+	});
+
+	boldBtn.addEventListener('click', function () {
+		var start = reviewTextInput.selectionStart;
+		var end = reviewTextInput.selectionEnd;
+		var result = reviewTextInput.value;
+		if (start < end) {
+			result = reviewTextInput.value.slice(0, start) + '[b]' + reviewTextInput.value.slice(start, end) +
+					'[/b]' + reviewTextInput.value.slice(end);
+		} else {
+			result = reviewTextInput.value + '[b][/b]';
+		}
+
+		reviewTextInput.value = result;
+		var event = document.createEvent('Event');
+		event.initEvent('input', true, true);
+		reviewTextInput.dispatchEvent(event);
+	});
+
+	emphasizeBtn.addEventListener('click', function () {
+		var start = reviewTextInput.selectionStart;
+		var end = reviewTextInput.selectionEnd;
+		var result = reviewTextInput.value;
+		if (start < end) {
+			result = reviewTextInput.value.slice(0, start) + '[i]' + reviewTextInput.value.slice(start, end) +
+					'[/i]' + reviewTextInput.value.slice(end);
+		} else {
+			result = reviewTextInput.value + '[i][/i]';
+		}
+
+		reviewTextInput.value = result;
+		var event = document.createEvent('Event');
+		event.initEvent('input', true, true);
+		reviewTextInput.dispatchEvent(event);
+	});
+
+	quoteBtn.addEventListener('click', function () {
+		var start = reviewTextInput.selectionStart;
+		var end = reviewTextInput.selectionEnd;
+		var result = reviewTextInput.value;
+		if (start < end) {
+			result = reviewTextInput.value.slice(0, start) + '[q]' + reviewTextInput.value.slice(start, end) +
+					'[/q]' + reviewTextInput.value.slice(end);
+		} else {
+			result = reviewTextInput.value + '[q][/q]';
+		}
+
+		reviewTextInput.value = result;
+		var event = document.createEvent('Event');
+		event.initEvent('input', true, true);
+		reviewTextInput.dispatchEvent(event);
+	});
+
+	avatarInput.addEventListener('change', function (e) {
+		var file = this.files[0];
+		var fr = new FileReader();
+		fr.onload = (function (file) {
+			return function (e) {
+				var data = e.target.result;
+				avatarOutput.src = data;
+				avatarUploadOuput.src = data;
+				avatarSelectedLabel.removeAttribute('hidden');
+				avatarEmptyLabel.setAttribute('hidden', 'hidden');
+			}
+		})(file);
+
+		fr.readAsDataURL(file);
+	})
+</script>
 </html>

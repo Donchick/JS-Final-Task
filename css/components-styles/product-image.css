@@ -31,3 +31,11 @@
 .star{
 	background: url('../../images/star.png');
 }
+
+.black-star{
+	background: url('../../images/black-star.png');
+}
+
+.grey-star{
+	background: url('../../images/grey-star.png');
+}
