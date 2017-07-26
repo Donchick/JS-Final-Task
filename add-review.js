@@ -67,28 +67,35 @@ reviewTextInput.addEventListener('input', function () {
 });
 
 boldBtn.addEventListener('click', function () {
-    var start = reviewTextInput.selectionStart;
-    var end = reviewTextInput.selectionEnd;
+    var selectionPosition = getSelectionPosition(reviewTextInput);
 
-    reviewTextInput.value = addSubTag(reviewTextInput.value, start, end, 'b');
+    reviewTextInput.value = addSubTag(reviewTextInput.value,
+        selectionPosition.start, selectionPosition.end, 'b');
     triggerReviewTextChanged();
 });
 
 emphasizeBtn.addEventListener('click', function () {
-    var start = reviewTextInput.selectionStart;
-    var end = reviewTextInput.selectionEnd;
+    var selectionPosition = getSelectionPosition(reviewTextInput);
 
-    reviewTextInput.value = addSubTag(reviewTextInput.value, start, end, 'i');
+    reviewTextInput.value = addSubTag(reviewTextInput.value,
+        selectionPosition.start, selectionPosition.end, 'i');
     triggerReviewTextChanged();
 });
 
 quoteBtn.addEventListener('click', function () {
-    var start = reviewTextInput.selectionStart;
-    var end = reviewTextInput.selectionEnd;
+    var selectionPosition = getSelectionPosition(reviewTextInput);
 
-    reviewTextInput.value = addSubTag(reviewTextInput.value, start, end, 'q');
+    reviewTextInput.value = addSubTag(reviewTextInput.value,
+        selectionPosition.start, selectionPosition.end, 'q');
     triggerReviewTextChanged();
 });
+
+function getSelectionPosition(textElement) {
+    return {
+        start: textElement.selectionStart,
+        end: textElement.selectionEnd
+    };
+}
 
 function triggerReviewTextChanged () {
     var event = document.createEvent('Event');
