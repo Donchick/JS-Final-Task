@@ -136,8 +136,7 @@
         }
 
         this.slideTo = function (toGoItemIndex) {
-            let toGoItem = items[toGoItemIndex];
-            this._currentItem = toGoItem;
+            this._currentItem = items[toGoItemIndex];
             this._currentPosition = toGoItemIndex;
         }
     }
