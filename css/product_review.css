@@ -224,7 +224,7 @@ input.avatar{
     color: #ffcc00;
 }
 
-.add-review-lable{
+.add-review-label{
     width: 100%;
     text-align: center;
     font-family: PT Sans, SansSerif;
@@ -232,7 +232,7 @@ input.avatar{
     font-size: 16px;
 }
 
-.add-review-lable .open-label{
+.add-review-label .open-label{
     text-decoration: underline;
     color: #ffcc00;
     cursor: pointer;

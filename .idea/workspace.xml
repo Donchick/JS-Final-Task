@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d80ae11a-59b9-4e6c-8357-dd576ee9f6d2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image-slider.js" afterPath="$PROJECT_DIR$/image-slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product-review.js" afterPath="$PROJECT_DIR$/product-review.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/product_review.css" afterPath="$PROJECT_DIR$/css/product_review.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product_customer.html" afterPath="$PROJECT_DIR$/product_customer.html" />
     </list>
     <ignored path="slider-example.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="product_customer.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="product_customer.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product_customer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1755">
-              <caret line="117" column="43" selection-start-line="117" selection-start-column="43" selection-end-line="117" selection-end-column="43" />
+            <state relative-caret-position="367">
+              <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -38,11 +38,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product-review.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product-review.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product-review.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="96" column="61" selection-start-line="96" selection-start-column="61" selection-end-line="96" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product_review.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/product_review.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="734">
+              <caret line="234" column="17" selection-start-line="234" selection-start-column="17" selection-end-line="234" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -74,15 +84,15 @@
         <option value="$PROJECT_DIR$/product-review.css" />
         <option value="$PROJECT_DIR$/css/components-styles/product-image.css" />
         <option value="$PROJECT_DIR$/css/product_customer.css" />
-        <option value="$PROJECT_DIR$/css/product_review.css" />
         <option value="$PROJECT_DIR$/simple-text-editor.js" />
         <option value="$PROJECT_DIR$/image-preview-loader.js" />
         <option value="$PROJECT_DIR$/add-review.js" />
         <option value="$PROJECT_DIR$/product_customer.js" />
         <option value="$PROJECT_DIR$/utilites.js" />
-        <option value="$PROJECT_DIR$/product_customer.html" />
         <option value="$PROJECT_DIR$/image-slider.js" />
         <option value="$PROJECT_DIR$/product-review.js" />
+        <option value="$PROJECT_DIR$/css/product_review.css" />
+        <option value="$PROJECT_DIR$/product_customer.html" />
       </list>
     </option>
   </component>
@@ -237,12 +247,12 @@
       <workItem from="1500987733486" duration="35433000" />
       <workItem from="1502894427459" duration="8083000" />
       <workItem from="1502990461862" duration="189000" />
-      <workItem from="1502990791693" duration="651000" />
+      <workItem from="1502990791693" duration="736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50973000" />
+    <option name="totallyTimeSpent" value="51058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1920" height="1004" extended-state="0" />
@@ -434,14 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/product_review.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slider.js" />
     <entry file="file://$PROJECT_DIR$/fadeSlider.js" />
     <entry file="file://$PROJECT_DIR$/horizontalSlider.js" />
@@ -451,16 +453,6 @@
     <entry file="file://$PROJECT_DIR$/product_customer.js" />
     <entry file="file://$PROJECT_DIR$/zoomer.js" />
     <entry file="file://$PROJECT_DIR$/utilites.js" />
-    <entry file="file://$PROJECT_DIR$/product_customer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="117" column="43" selection-start-line="117" selection-start-column="43" selection-end-line="117" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/image-slider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -471,9 +463,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/product-review.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="96" column="61" selection-start-line="96" selection-start-column="61" selection-end-line="96" selection-end-column="77" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/product_review.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="234" column="17" selection-start-line="234" selection-start-column="17" selection-end-line="234" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_customer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
