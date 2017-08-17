@@ -88,7 +88,7 @@
         let userNameOutput = document.querySelector('.review-preview .user-name');
 
         let avatarInput = document.querySelector('.review-editor .avatar');
-        let avatarUploadOuput = document.querySelector('.review-editor .avatar-img');
+        let avatarUploadOutput = document.querySelector('.review-editor .avatar-img');
         let avatarOutput = document.querySelector('.review-preview .review-avatar');
         let avatarEmptyLabel = document.querySelector('.review-editor .empty-avatar.label');
         let avatarSelectedLabel = document.querySelector('.review-editor .selected-avatar.label');
@@ -127,7 +127,7 @@
 
             if (!imgPreviewLoader) {
                 imgPreviewLoader = new ImagePreviewLoader(avatarInput,
-                    [avatarUploadOuput, avatarOutput], imgLoaded.bind(null, avatarSelectedLabel, avatarEmptyLabel));
+                    [avatarUploadOutput, avatarOutput], imgLoaded.bind(null, avatarSelectedLabel, avatarEmptyLabel));
             }
         });
 
