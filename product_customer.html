@@ -109,14 +109,16 @@
 				Copyright “Demo Shop”, 2017
 			</footer>
 		</div>
+		<div class="slider-images" style="display:none">
+			<img src='images/1.jpg' alt='first product desc' isActive='active'>
+			<img src='images/2.jpg' alt='second product desc'>
+			<img src='images/3.jpg' alt='third product desc'>
+		</div>
 	</body>
-	<script src="slider.js"></script>
-	<script src="fadeSlider.js"></script>
-	<script src="horizontalSlider.js"></script>
-	<script src="zoomer.js"></script>
-	<script src="utilites.js"></script>
-	<script src="product_customer.js"></script>
-	<script src="simple-text-editor.js"></script>
-	<script src="image-preview-loader.js"></script>
-	<script src="add-review.js"></script>
+	<script src="image-slider.js"></script>
+	<script src="product-review.js"></script>
+	<script>
+		new ImageSlider(document.querySelector('.slider-images'), 'DEMO SHOP', true);
+		new ProductReview();
+	</script>
 </html>
