@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d80ae11a-59b9-4e6c-8357-dd576ee9f6d2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/product_review.css" afterPath="$PROJECT_DIR$/css/product_review.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product-review.js" afterPath="$PROJECT_DIR$/product-review.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/product_customer.html" afterPath="$PROJECT_DIR$/product_customer.html" />
     </list>
     <ignored path="slider-example.iws" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="product_customer.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/product_customer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+            <state relative-caret-position="277">
+              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -41,8 +41,8 @@
       <file leaf-file-name="product-review.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product-review.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="96" column="61" selection-start-line="96" selection-start-column="61" selection-end-line="96" selection-end-column="77" />
+            <state relative-caret-position="414">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,8 +90,8 @@
         <option value="$PROJECT_DIR$/product_customer.js" />
         <option value="$PROJECT_DIR$/utilites.js" />
         <option value="$PROJECT_DIR$/image-slider.js" />
-        <option value="$PROJECT_DIR$/product-review.js" />
         <option value="$PROJECT_DIR$/css/product_review.css" />
+        <option value="$PROJECT_DIR$/product-review.js" />
         <option value="$PROJECT_DIR$/product_customer.html" />
       </list>
     </option>
@@ -247,12 +247,12 @@
       <workItem from="1500987733486" duration="35433000" />
       <workItem from="1502894427459" duration="8083000" />
       <workItem from="1502990461862" duration="189000" />
-      <workItem from="1502990791693" duration="736000" />
+      <workItem from="1502990791693" duration="816000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51058000" />
+    <option name="totallyTimeSpent" value="51138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1920" height="1004" extended-state="0" />
@@ -461,14 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product-review.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="96" column="61" selection-start-line="96" selection-start-column="61" selection-end-line="96" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/product_review.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="734">
@@ -477,10 +469,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/product-review.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/product_customer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+        <state relative-caret-position="277">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

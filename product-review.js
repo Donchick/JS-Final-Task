@@ -94,9 +94,9 @@
         let quoteBtn = document.getElementsByClassName('quote-btn')[0];
         let reviewDate = document.getElementsByClassName('review-date')[0];
 
-        let openReviewEditorLabel = document.querySelector('.add-review-lable .open-label');
-        let closedReviewEditorLabel = document.querySelector('.add-review-lable .closed-label');
-        let openedReviewEditorLabel = document.querySelector('.add-review-lable .opened-label');
+        let openReviewEditorLabel = document.querySelector('.add-review-label .open-label');
+        let closedReviewEditorLabel = document.querySelector('.add-review-label .closed-label');
+        let openedReviewEditorLabel = document.querySelector('.add-review-label .opened-label');
         let productReview = document.querySelector('.product-review');
 
         let cancelBtn = document.getElementsByClassName('cancel-btn')[0];
