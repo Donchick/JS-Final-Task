@@ -112,13 +112,13 @@
         }
     }
 
-    function Slider (items, currentItem, currentPosition, prevButton, nextButton, animationDuration) {
+    function Slider (items, currentItem, currentPosition, prevButton, nextButton, animationDuration = 500) {
         let itemsCount = items.length;
         this._nextDirection = 1;
         this._prevDirection = -1;
         this._currentItem = currentItem;
         this._currentPosition = currentPosition;
-        this._animationDuration = animationDuration || 500;
+        this._animationDuration = animationDuration;
 
         nextButton.addEventListener('click', onClickNext.bind(this));
         prevButton.addEventListener('click', onClickPrev.bind(this));

@@ -12,29 +12,19 @@
             textOutput.innerHTML = result || '';
         });
 
-        boldActivator.addEventListener('click', function () {
+        boldActivator.addEventListener('click', decorateTextByTag.bind(null, 'b'));
+
+        emphasizeActivator.addEventListener('click', decorateTextByTag.bind(null, 'i'));
+
+        quoteActivator.addEventListener('click', decorateTextByTag.bind(null, 'q'));
+
+        function decorateTextByTag (tag) {
             let selectionPosition = getSelectionPosition();
 
             textInput.value = addSubTag(textInput.value,
-                selectionPosition.start, selectionPosition.end, 'b');
+                selectionPosition.start, selectionPosition.end, tag);
             triggerReviewTextChanged();
-        });
-
-        emphasizeActivator.addEventListener('click', function () {
-            let selectionPosition = getSelectionPosition();
-
-            textInput.value = addSubTag(textInput.value,
-                selectionPosition.start, selectionPosition.end, 'i');
-            triggerReviewTextChanged();
-        });
-
-        quoteActivator.addEventListener('click', function () {
-            let selectionPosition = getSelectionPosition();
-
-            textInput.value = addSubTag(textInput.value,
-                selectionPosition.start, selectionPosition.end, 'q');
-            triggerReviewTextChanged();
-        });
+        }
 
         function getSelectionPosition() {
             return {
@@ -66,14 +56,14 @@
         fileInput.addEventListener('change', function (e) {
             let file = this.files[0];
             let fr = new FileReader();
-            fr.onload = (function (file) {
+            fr.onload = (function () {
                 return function (e) {
                     let data = e.target.result;
                     previews.forEach(preview => preview.src = data);
 
                     imgLoaded();
                 }
-            })(file);
+            })();
 
             fr.readAsDataURL(file);
         });
