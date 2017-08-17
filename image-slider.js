@@ -112,13 +112,13 @@
         }
     }
 
-    function Slider (items, currentItem, currentPosition, prevButton, nextButton, anumationDuration) {
+    function Slider (items, currentItem, currentPosition, prevButton, nextButton, animationDuration) {
         let itemsCount = items.length;
         this._nextDirection = 1;
         this._prevDirection = -1;
         this._currentItem = currentItem;
         this._currentPosition = currentPosition;
-        this._anumationDuration = anumationDuration || 500;
+        this._animationDuration = animationDuration || 500;
 
         nextButton.addEventListener('click', onClickNext.bind(this));
         prevButton.addEventListener('click', onClickPrev.bind(this));
@@ -155,7 +155,7 @@
                 toGoItem.classList.add('active');
                 this._currentItem = toGoItem;
                 this._currentPosition = toGoItemIndex;
-            }, this._anumationDuration);
+            }, this._animationDuration);
         }
     }
 
@@ -180,7 +180,7 @@
                 rightSideItem.style.left = '0px';
                 this._currentItem = toGoItem;
                 this._currentPosition = toGoItemIndex;
-            }, this._anumationDuration);
+            }, this._animationDuration);
         }
     }
 

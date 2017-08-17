@@ -4,7 +4,7 @@
         avatarEmptyLabel.setAttribute('hidden', 'hidden');
     }
 
-    function SimpleTextEditor (textInput, textOutput, boldActivator, emphasizeAcitvator, quoteActivator) {
+    function SimpleTextEditor (textInput, textOutput, boldActivator, emphasizeActivator, quoteActivator) {
         textInput.addEventListener('input', function () {
             let regexp = /\[(\/?)([bqi])\]/g;
             let result = textInput.value.replace(regexp, '<$1$2>')
@@ -20,7 +20,7 @@
             triggerReviewTextChanged();
         });
 
-        emphasizeAcitvator.addEventListener('click', function () {
+        emphasizeActivator.addEventListener('click', function () {
             let selectionPosition = getSelectionPosition();
 
             textInput.value = addSubTag(textInput.value,
@@ -62,14 +62,14 @@
         }
     }
 
-    function ImagePreviewLoader (fileInput, previewes, imgLoaded) {
+    function ImagePreviewLoader (fileInput, previews, imgLoaded) {
         fileInput.addEventListener('change', function (e) {
             let file = this.files[0];
             let fr = new FileReader();
             fr.onload = (function (file) {
                 return function (e) {
                     let data = e.target.result;
-                    previewes.forEach(preview => preview.src = data);
+                    previews.forEach(preview => preview.src = data);
 
                     imgLoaded();
                 }
